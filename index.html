@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web-Based Compiler Front-End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Compiler Front-End Analyzer</h1>
+
+    <textarea id="codeInput" placeholder="Enter C-like code here..."></textarea>
+    <br>
+    <button onclick="analyzeCode()">Analyze</button>
+
+   <h3>Token Table</h3>
+   <table border="1">
+    <thead>
+        <tr>
+            <th>Token</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody id="tokenTable"></tbody>
+</table>
+
+    <h2>Syntax Result</h2>
+    <div id="syntaxResult"></div>
+
+    <h2>Error Messages</h2>
+    <div id="errorMessages"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
